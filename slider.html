@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Slider exemple</title>
+</head>
+
+<body>
+
+  <div class="wrap2">
+    <div class="p4">
+      <p class="slideup">PROJECTS</p>
+    </div>
+    <div id="arrow-left2"  class="arrow2">
+      <img  class="hrleftanim" src="arrow_left.svg" alt="">
+    </div>
+    <div class="slider">
+      <!-- Slideshow 1 -->
+      <div class="slide slide1">
+        <div class="slide-content2">
+
+          <div class="namesteven2">
+            <h1 class="classarch slideup" id="2">BLOOM'S</h1>
+            <h1 class="classarch slideup">HOUSE</h1>
+            <p class="p1 slideup">Bloom's House renovation allowed the architect, interior</p>
+            <p class="p1 slideup">designer and client to come together through an inctusive</p>
+            <p class="p1 slideup">process. The result was the creation of a cistilled traditional</p>
+            <p class="p1 slideup">space that successfully balances the nature and</p>
+            <p class="p1 slideup">industrial, marries traditional European vintage style to</p>
+            <p class="p1 slideup">a western North American vibe.</p>
+
+          </div>
+          <div class="deco">
+            <img class="specialdeco1 imganime4" src="background.png" alt="">
+            <img class="deco1" src="pic1.jpg" alt="">
+          </div>
+
+
+          <div class="steven2">
+            <img class="specialdeco2 imganime5" src="background.png" alt="">
+            <img class="deco2" src="pic 3.jpg" alt="">
+          </div>
+          <div class="">
+            <img class="specialdeco3 imganime5" src="background.png" alt="">
+            <img class="deco3" src="pic2.jpg" alt="">
+          </div>
+          <div class="descproject">
+
+            <h6 class="sub1 slideup element">ARCHITECT</h6>
+
+                        <p class="namefirst slideup element">BARBARA KNOWLES</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+            <h6 class="sub1 slideup element">DESIGNER</h6>
+
+            <p class="namefirst slideup element">STEVEN MCDOLLAR</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h6 class="sub1 slideup element">CATEGORY</h6>
+            <p class="namefirst slideup element">RENOVATION</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h6 class="sub1 slideup element">DATE</h6>
+            <p class="namefirst slideup element">NOVEMBER 20, 2018</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h6 class="sub1 slideup element">TAGS</h6>
+            <p class="namefirst slideup element">SEMI-CLASSIC BLOOMS HOUSE</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Slideshow 2-->
+      <div class="slide slide2">
+        <div class="slide-content2">
+
+          <div class="namesteven">
+            <h6 class="sub2 slideup2">CO-FOUNDER & DESIGNER</h6>
+            <p class="namefirst slideup">EDGAR WILSON</p>
+          </div>
+          <div class="">
+            <img class="specialbarb imganime4" src="background.png" alt="">
+            <img class="barabara2" src="brown.png" alt="">
+          </div>
+          <div class="namebarbara">
+            <h6 class="sub2 slideup2">CO-FOUNDER & ARCHITECT</h6>
+            <p class="namefirst slideup">MARY BROWNS</p>
+          </div>
+          <div class="steven">
+            <img class="specialsteven imganime5" src="background.png" alt="">
+            <img class="edgar" src="steven.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div id="arrow-right2" class="arrow3">
+      <img src="arrow_right.svg" class="hrrightanim" alt="">
+    </div>
+    <div class="projectsnav">
+      <h4 class="link slideup">Bloom's House</h4>
+      <h4 class="link slideup">Stevensos Gallery</h4>
+      <h4 class="link slideup">Clayton House</h4>
+    </div>
+    <hr id="righthr2" class="hrrightanim righthr2">
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+  <script type="text/javascript">
+    let sliderImages = document.querySelectorAll(".slide"),
+      arrowLeft = document.querySelector(".arrow1"),
+      arrowRight = document.querySelector(".arrow"),
+      current = sliderImages.length;
+
+
+    // Clear all images
+    function reset() {
+      $(".namesteven").removeClass("slidedown");
+      $(".namebarbara").removeClass("slidedown");
+      $(".specialbarb").removeClass("closeanim1");
+      $(".specialsteven").removeClass("closeanim2");
+      for (let i = 0; i < sliderImages.length; i++) {
+         sliderImages[i].style.display = "none";
+      }
+    }
+
+    // Init slider
+    function startSlide() {
+      reset();
+      sliderImages[0].style.display = "block";
+    }
+
+    // Show prev
+    function slideLeft() {
+  close();
+  setTimeout(function () {
+    $(".namesteven").removeClass("slidedown");
+    $(".namebarbara").removeClass("slidedown");
+    $(".specialbarb").removeClass("closeanim1");
+    $(".specialsteven").removeClass("closeanim2");
+    $(".specialbarb").removeClass("appear4");
+    for (let i = 0; i < sliderImages.length; i++) {
+       sliderImages[i].style.display = "none";
+    }
+sliderImages[0].style.display = "block";
+  }, 5000,  closingdone= true);
+};
+
+  // animations closing
+
+  var animationcompleted = false;
+  function close() {
+    $(".namesteven").addClass("slidedown");
+    $(".namebarbara").addClass("slidedown");
+    $("#bigshit2").addClass("moveleft");
+    $(".specialbarb").addClass("closeanim1");
+    $(".specialsteven").addClass("closeanim2");
+
+  };
+
+
+
+    // Show next
+    function slideRight() {
+   close();
+   setTimeout(function () {
+     $(".namesteven").removeClass("slidedown");
+     $(".namebarbara").removeClass("slidedown");
+     $(".specialbarb").removeClass("closeanim1");
+     $(".specialsteven").removeClass("closeanim2");
+     $(".specialbarb").removeClass("appear4");
+     for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+     }
+sliderImages[1].style.display = "block";
+   }, 5000,  closingdone= true);
+};
+
+
+
+    // Left arrow click
+    $("#arrow-left").on("click", function() {
+    if (current === 0) {
+      alert('cant go further')
+    }
+    else {
+      slideLeft();
+    }
+
+    });
+
+    // Right arrow click
+    $("#arrow-right").on("click", function() {
+    if (current === 1) {
+      alert('cant go further')
+    }
+    else {
+      slideRight();
+    }
+
+        });
+
+    startSlide();
+  </script>
+</body>
+
+</html>

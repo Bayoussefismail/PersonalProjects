@@ -1,0 +1,586 @@
+
+/*main*/
+body {
+  background-color: #121212;
+  width: 100rem;
+  height: 100rem;
+overflow-x: hidden;
+overflow-y: scroll;
+margin: 0 0 0 0;
+padding: 0;
+}
+footer {
+  display: block;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0;
+  bottom: 220rem;
+  width: 500px;
+height: 100px;
+}
+
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D9CDBF #121212;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #121212;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #D9CDBF;
+  border-radius: 20px;
+  border: 3px solid #121212;
+}
+
+h1 {
+visibility: hidden;
+  color: #D9CDBF;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.65rem;
+}
+p {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  color: #C7C7C7;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  visibility: hidden;
+  color: #D9CDBF;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 0px;
+}
+
+h3 {
+  visibility: hidden;
+  color: #D9CDBF;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 0;
+  line-height: 1.65rem;
+  margin-top: 0;
+margin-bottom: 0;
+position: relative;
+display: inline-block;
+bottom: 0.813rem;
+letter-spacing: 0.7rem;
+
+
+}
+
+a {
+  text-decoration: none;
+  visibility: hidden;
+  color: #C7C7C7;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 0;
+  line-height: 1.65rem;
+}
+h4 {
+  visibility: hidden;
+  color: #C7C7C7;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 0;
+  line-height: 1.65rem;
+}
+
+/*classes*/
+.leftdiv {
+  position: relative;
+  display: block;
+  padding-left: 4rem;
+  top: 34rem;
+}
+.leftdiv2 {
+  position: relative;
+  display: block;
+  padding-left: 2.9rem;
+  text-align: left;
+  bottom: 165rem;
+}
+.contactelements1 {
+  position: relative;
+  display: block;
+  top: 6rem;
+}
+.contactelements2 {
+  position: relative;
+  display: block;
+  top: 22rem;
+}
+
+.contactelements2 p {
+  position: relative;
+  display: block;
+  margin-top: 1em ;
+    margin-bottom: 1em ;
+}
+.ADRESS {
+  position: relative;
+  display: block;
+  bottom: 11.5rem;
+  left: 50rem;
+}
+
+.titlefooter {
+  position: relative;
+  display: block;
+  bottom: 20rem;
+  left: 110rem;
+}
+.ADRESS p {
+  position: relative;
+  display: block;
+  margin-top: 0.5rem ;
+    margin-bottom: 0.5rem ;
+}
+.contatimg {
+  position: relative;
+  display: block;
+  bottom: 255.5rem;
+  left: 95rem;
+}
+.navigationdiv {
+text-align: right;
+position: relative;
+display: block;
+left: 15rem;
+
+}
+.hrright {
+  visibility: hidden;
+  text-align: right;
+  position: relative;
+  display: inline-block;
+
+margin: 0 0;
+margin-top: 0;
+width: 10rem;
+border: 0;
+height: 0.063rem;
+background-image: linear-gradient(to right, #C7C7C7, #D9CDBF, #C7C7C7);
+}
+.hrrightanim {
+  animation-delay: 0s;
+  -webkit-animation: appear1 1s;
+animation: appearhr1 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+@keyframes appearhr1 {
+   0% {          opacity: 0;
+        transform: scaleX(0);
+       transform-origin: right;
+
+          }
+   100% {       opacity: 1;
+        transform: none;
+        z-index: 10;
+      transform-origin: right;
+      visibility: visible;
+}
+}
+.hrleft {
+  visibility: hidden;
+  text-align: left;
+
+margin: 0 0;
+margin-top: 2rem;
+width: 7rem;
+border: 0;
+height: 0.063rem;
+background-image: linear-gradient(to right, #C7C7C7, #D9CDBF, #C7C7C7);
+}
+.hrleftanim {
+
+  -webkit-animation: appear1 1s;
+animation: appearhr2 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+@keyframes appearhr2 {
+   0% {          opacity: 0;
+        transform: scaleX(0);
+       transform-origin: left;
+
+          }
+   100% {       opacity: 1;
+        transform: none;
+      transform-origin: left;
+      visibility: visible;
+}
+}
+.progress
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background-color: #ffffff00;
+}
+.bar
+{
+  background-color: #D9CDBF;
+  width:0%;
+  height: 1px;
+  border-radius: 1px;
+}
+.percent
+{
+  position:relative;
+  display:inline-block;
+  top:10px;
+  left:48%;
+  color: #D9CDBF
+}
+.special {
+  z-index: 99;
+  position: absolute;
+  display: block;
+margin: 0 0 0 0;
+bottom: 24rem;
+left: 53rem;
+height: 40rem;
+width: auto;
+}
+.img1 {
+
+  position: relative;
+    display: block;
+  margin: 0 0 0 0;
+  bottom: 28.8rem;
+  left: 53rem;
+  height: 40rem;
+  width: auto;
+
+}
+
+.imganime1 {
+
+
+  -webkit-animation: appear1 1s;
+animation: appear1 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 4s;
+}
+
+
+
+@-webkit-keyframes appear1 {
+   0% {  opacity: 0;
+        transform: translate3d(0,75%,0); }
+   100% {      opacity: 1;
+        transform: none;
+      color:#121212; }
+}
+
+@keyframes appear1 {
+   0% {          opacity: 100;
+        transform: none);
+       transform-origin: bottom;
+          }
+   100% {       opacity: 100;
+        transform: scaleY(0);
+      transform-origin: bottom;
+      visibility: visible;
+}
+}
+.special2 {
+  z-index: 99;
+  position: absolute;
+  display: block;
+margin: 0 0 0 0;
+bottom: 10rem;
+left: 95rem;
+height: 30rem;
+width: auto;
+top: -45rem;
+}
+.img2 {
+
+  position:relative;
+  display: block;
+  margin: 0 0 0 0;
+  bottom: 75rem;
+  left: 95rem;
+
+  height: 30rem;
+  width: auto;
+}
+
+.imganime2 {
+
+animation-delay: 7s;
+position: relative;
+  -webkit-animation: appear1 1s;
+animation: appear2 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 5s;
+}
+@keyframes appear2 {
+   0% {          opacity: 100;
+        transform: none ;
+       transform-origin: left;
+          }
+   100% {       opacity: 100;
+        transform: scaleX(0);
+      transform-origin: left;
+      visibility: visible;
+}
+}
+.special3 {
+  z-index: 99;
+  position:absolute;
+  display: block;
+  margin: 0 0 0 0;
+
+  left: 42.8rem;
+  bottom: 70px;
+      top: 620px;
+  height: 30rem;
+  width: 50rem;
+  }
+}
+.img3 {
+  position:relative;
+  display: block;
+  margin: 0 0 0 0;
+  bottom: 85.1rem;
+  left: 42.8rem;
+
+  height: auto;
+  width: auto;
+  }
+
+.imganime3 {
+
+
+  -webkit-animation: appear1 1s;
+animation: appear3 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 7s;
+}
+@keyframes appear3 {
+   0% {          opacity: 100;
+        transform: none;
+       transform-origin: top;
+          }
+   100% {       opacity: 100;
+        transform: scaleY(0);
+      transform-origin: top;
+      visibility: visible;
+}
+}
+
+.lastthing {
+  z-index: 55;
+  visibility: hidden;
+    display: block;
+    position: absolute;
+ bottom: -1rem;
+}
+.slideup {
+
+  -webkit-animation: slideup 1s;
+animation: slideup 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 3s;
+}
+@-webkit-keyframes slideup {
+   0% {  opacity: 0;
+        transform: translate3d(0,75%,0); }
+   100% {      opacity: 1;
+        transform: none;
+          visibility: visible;
+       }
+}
+
+.opacityanim {
+
+  -webkit-animation: opacity 1s;
+animation: opacity 6s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 7s;
+}
+@keyframes opacity {
+   0% {  opacity: 0;
+       }
+   100% {      opacity: 20%;
+
+    visibility: visible;  }
+}
+
+.classarch {
+  position: relative;
+  display: block;
+  bottom: 110rem;
+}
+.p1 {
+  position: relative;
+  display: block;
+  bottom: 110rem;
+}
+.p2{
+  position: relative;
+  display: block;
+  bottom: 115rem;
+  right: 4rem;
+}
+.lastthing3{
+  visibility: hidden;
+}
+.navfooter {
+  position: relative;
+  display: block;
+ left: 3rem;
+
+}
+.linksnav {
+  position: relative;
+  display: block;
+ left: 12rem;
+ bottom: 6rem;
+}
+/*tags*/
+#Facebook {
+  margin-bottom: 0rem;
+}
+#linkdin {
+  margin-top: 0rem;
+}
+
+#firsttitle {
+    margin-bottom: 0rem;
+}
+#secondtitle {
+  margin-top: 0rem;
+    margin-bottom: 0.625rem;
+}
+#interiordesign {
+
+  position: relative;
+  display: block;
+  top: 35rem;
+}
+
+#NAME {
+  position: relative;
+  display: block;
+  top: 2rem;
+}
+#bigshit {
+  z-index: 55;
+position: absolute;
+display: block;
+  margin-bottom: 0px;
+    margin-top: 0px;
+  text-align: right;
+  background-color: #121212;
+  color: #121212;
+text-shadow:
+ -0.1rem -0.1rem 0 #D9CDBF,
+  0.1rem -0.1rem 0 #D9CDBF,
+  -0.1rem 0.1rem 0 #D9CDBF,
+   0.1rem 0.1rem 0 #D9CDBF;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 10rem;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 6rem;
+
+      left: 71rem;
+      bottom: -5rem;
+      letter-spacing: 1rem;
+      margin: 0 0 0 0;
+
+}
+#bigshit3 {
+
+  z-index: 55;
+position: absolute;
+display: block;
+  margin-bottom: 0px;
+    margin-top: 0px;
+  text-align: right;
+  background-color: #121212;
+  color: #121212;
+text-shadow:
+ -0.1rem -0.1rem 0 #D9CDBF,
+  0.1rem -0.1rem 0 #D9CDBF,
+  -0.1rem 0.1rem 0 #D9CDBF,
+   0.1rem 0.1rem 0 #D9CDBF;
+  font-family: Garamond, 'EB Garamond', serif;
+  font-size: 10rem;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 6rem;
+    opacity: 20%;
+      left: 73rem;
+      top: 267rem;
+      letter-spacing: 0rem;
+      margin: 0 0 0 0;
+}
+#img3 {
+  position:relative;
+  display: block;
+  margin: 0 0 0 0;
+  bottom: 85.1rem;
+  left: 42.8rem;
+
+  height: auto;
+  width: auto;
+  }
+  #slider {
+    position: relative;
+    display: block;
+    right: 30rem;
+    bottom: 111rem;
+  }
+  #slider2 {
+    position: relative;
+    display: block;
+bottom: 90rem;
+
+  }
