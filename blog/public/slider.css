@@ -160,7 +160,7 @@ animation-delay: 0s;
 .closeanim2 {
   visibility: hidden;
   -webkit-animation: appear1 1s;
-animation: close2 3s;
+animation: close2 2s;
 -webkit-animation-fill-mode: forwards;
 animation-fill-mode: forwards;
 animation-delay: 2s;
@@ -182,7 +182,7 @@ animation-delay: 2s;
 .closeanim1 {
   visibility: hidden;
   -webkit-animation: appear1 1s;
-animation: close2 3s;
+animation: close2 2s;
 -webkit-animation-fill-mode: forwards;
 animation-fill-mode: forwards;
 animation-delay: 2s;
@@ -448,6 +448,8 @@ font-size: 1.2rem;
       left: 84rem;
       }
       .arrow3 {
+          z-index: 99;
+          display: block;
         cursor: pointer;
         position: absolute;
         top:20rem;

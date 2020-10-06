@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>ClassArch.</title>
-  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="style.css">
 
