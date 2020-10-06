@@ -19,6 +19,7 @@ footer {
 height: 100px;
 }
 
+
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
@@ -46,16 +47,18 @@ visibility: hidden;
   font-size: 1.5rem;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: lighter;
+
   line-height: 1.65rem;
 }
+
 p {
   z-index: 10;
   position: absolute;
   display: block;
   visibility: hidden;
   color: #C7C7C7;
-  font-family: Garamond, 'EB Garamond', serif;
+  font-family: sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-variant: normal;
@@ -71,6 +74,7 @@ h2 {
   font-size: 2rem;
   font-style: normal;
   font-variant: normal;
+  font-weight: lighter;
   font-weight: 500;
   line-height: 2rem;
   margin-bottom: 0px;
@@ -99,7 +103,7 @@ a {
   text-decoration: none;
   visibility: hidden;
   color: #C7C7C7;
-  font-family: Garamond, 'EB Garamond', serif;
+  font-family: sans-serif;
   font-size: 0.8rem;
   font-style: normal;
   font-variant: normal;
@@ -109,7 +113,7 @@ a {
 h4 {
   visibility: hidden;
   color: #C7C7C7;
-  font-family: Garamond, 'EB Garamond', serif;
+  font-family: sans-serif;
   font-size: 0.8rem;
   font-style: normal;
   font-variant: normal;
@@ -179,6 +183,9 @@ position: relative;
 display: block;
 left: 15rem;
 
+}
+.link:hover {
+  color: #D9CDBF;
 }
 .hrright {
   visibility: hidden;
@@ -486,9 +493,11 @@ animation-delay: 7s;
 /*tags*/
 #Facebook {
   margin-bottom: 0rem;
+  font-family: sans-serif;
 }
 #linkdin {
   margin-top: 0rem;
+  font-family: sans-serif;
 }
 
 #firsttitle {
@@ -528,10 +537,11 @@ text-shadow:
   font-size: 10rem;
   font-style: normal;
   font-variant: normal;
+  font-weight: lighter;
   line-height: 6rem;
 
-      left: 71rem;
-      bottom: -5rem;
+      left: 74.5rem;
+      bottom: 0rem;
       letter-spacing: 1rem;
       margin: 0 0 0 0;
 
@@ -555,6 +565,7 @@ text-shadow:
   font-size: 10rem;
   font-style: normal;
   font-variant: normal;
+  font-weight: lighter;
   line-height: 6rem;
     opacity: 20%;
       left: 73rem;

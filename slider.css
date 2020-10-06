@@ -1,7 +1,7 @@
 
 p {
     color: #C7C7C7;
-  font-family: serif;
+  font-family: sans-serif;
   font-size: 0.8rem;
   font-style: normal;
   font-variant: normal;
@@ -11,16 +11,14 @@ p {
 }
 h6 {
 color:  #73594F;
-font-family: serif;
+font-family: sans-serif;
 font-size: 0.8rem;
 font-style: normal;
 font-variant: normal;
 margin: 0;
 padding: 0;
 }
-#arrow-left {
 
-}
 .namesteven2 {
   right: 23rem;
 }
@@ -207,6 +205,8 @@ animation-delay: 2s;
 
 .namefirst {
  font-size: 1.5rem;
+ font-family: serif;
+
 }
 .namesteven {
   position: relative;
@@ -358,9 +358,12 @@ animation-delay: 2s;
 .p6 {
   position: relative;
   display: block;
-  bottom: 249.7rem;
+  bottom: 249.5rem;
 
     left: 85rem;
+}
+.p6:hover {
+  color: #D9CDBF;
 }
 .inputstyle {
   visibility: hidden;
@@ -382,6 +385,12 @@ animation-delay: 2s;
  background: transparent;
  transition: border-color 0.2s;
 }
+.inputstyle:focus {
+
+    border-color: #D9CDBF;
+
+  }
+
 #arrow-right {
 visibility: hidden;
     }
@@ -489,6 +498,7 @@ display: block;
       font-size: 10rem;
       font-style: normal;
       font-variant: normal;
+      font-weight: lighter;
       line-height: 6rem;
 
           left: 10.9rem;
@@ -499,6 +509,7 @@ display: block;
     }
 .sub1 {
   visibility: hidden;
+
 }
 .sub2 {
   visibility: hidden;
@@ -556,7 +567,22 @@ transition-timing-function: ease-in;
     left: -8rem; }
 }
 
-
+.arrow1:hover,
+.arrow1:focus {
+  filter: brightness(65%) contrast(97%) hue-rotate(120deg) saturate(300%) grayscale(49%) sepia(100%) ;
+}
+.arrow:hover,
+.arrow:focus {
+  filter: brightness(65%) contrast(97%) hue-rotate(120deg) saturate(300%) grayscale(49%) sepia(100%) ;
+}
+.arrow2:hover,
+.arrow2:focus {
+  filter: brightness(65%) contrast(97%) hue-rotate(120deg) saturate(300%) grayscale(49%) sepia(100%) ;
+}
+.arrow3:hover,
+.arrow3:focus {
+  filter: brightness(65%) contrast(97%) hue-rotate(120deg) saturate(300%) grayscale(49%) sepia(100%) ;
+}
 /*mouse effect*/
 div.clickEffect{
 	position:fixed;
