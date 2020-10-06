@@ -200,7 +200,7 @@
            <div id="arrow-right2" class="arrow3 primary">
            <img src="arrow_right.svg" class="hrrightanim" alt="">
          </div>
-         <div class="projectsnav secondary">
+         <div class="projectsnav primary">
            <h4 class="link slideup">Bloom's House</h4>
            <h4 class="link slideup">Stevensos Gallery</h4>
            <h4 class="link slideup">Clayton House</h4>

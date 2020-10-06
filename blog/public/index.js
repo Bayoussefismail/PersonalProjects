@@ -1,5 +1,8 @@
 
-
+$(document).ready(function(){
+    $(this).scrollTop(0);
+    $(this).scrollLeft(0);
+});
 
 
 document.onreadystatechange = function(e)

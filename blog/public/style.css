@@ -1,34 +1,24 @@
 
 
 /*media queries*/
-.column {
-  float: left;
-  width: 100%;
-}
+
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
     .primary { width:100%; }
-    .secondary { width:100%; margin-left:5%;}
-    .column {
-  width: 100%;
-}
+    .secondary { width:100%; }
+
 }
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 896px) {
     .primary { width:100%; }
     .secondary { width:100%; margin-left:10%; border:none; }
-    .column {
-    width: 150%;
-  }
+
 }
 /* Media Queries: Phone Portrait */
 @media screen and (max-width: 330px) {
-    .primary { width:100%; }
-    .secondary { width:100%; margin-left:10%; border:none; }
-    .column {
-  width: 200%;
-}
+    .primary { width:50%; }
+    .secondary { width:100%; margin-left:0%; border:none; }
 }
 /* Media Queries: images Portrait */
 @media (min-device-width:600px) {
@@ -39,10 +29,9 @@
 
 @media (min-device-width:896px) {
     img[data-src-500px] {
-        content: attr(data-src-500px, url);
-        width: 100%;
-        height:auto;
-        right: 50%;
+        content: attr(data-src-800px, url);
+      
+
     }
 }
 /* Media Queries: text Portrait */
@@ -342,7 +331,7 @@ animation-delay: 1s;
   position: absolute;
   display: block;
 margin: 0 0 0 0;
-bottom: 27rem;
+bottom: 25rem;
 left: 53rem;
 height: 40rem;
 width: auto;
