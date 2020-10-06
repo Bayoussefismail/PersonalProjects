@@ -38,9 +38,10 @@ padding: 0;
 .descproject {
   position: relative;
   display: block;
-  bottom: 54rem;
+  bottom: 60rem;
   left: 16.7rem;
 }
+
 .specialbarb {
   z-index: 60;
 
@@ -337,8 +338,8 @@ animation-delay: 2s;
 .p4 {
   position: relative;
   display: block;
-  bottom: 0rem;
-  top: 70.5rem;
+
+  top: -32rem;
     left: 3rem;
 }
 .p7 {
@@ -360,7 +361,7 @@ animation-delay: 2s;
   display: block;
   bottom: 249.5rem;
 
-    left: 85rem;
+    left: 90rem;
 }
 .p6:hover {
   color: #D9CDBF;

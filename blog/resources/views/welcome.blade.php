@@ -3,58 +3,61 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
   <title>ClassArch.</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@615&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class='progress' id="progress_div">
+  <div class='primary progress' id="progress_div">
     <div class='bar' id='bar1'></div>
     <div class='percent' id='percent1'></div>
   </div>
-  <div class="leftdiv" id="NAME">
-    <h2 class="companyname slideup">ClassArch.</h2>
-    <h3 class="subtitlename slideup">INTERIOR</h3>
+  <div class="primary leftdiv" id="NAME">
+    <h2 class="secondary companyname slideup">ClassArch.</h2>
+    <h3 class="secondary subtitlename slideup">INTERIOR</h3>
   </div>
-  <div class="navigationdiv">
-    <a class="link slideup" href="#1">About</a>
+  <div class="primary navigationdiv">
+    <a class=" link slideup" href="#1">About</a>
     <br>
-    <a class="link slideup" href="#2">Projects</a>
+    <a class=" link slideup" href="#2">Projects</a>
     <br>
-    <a class="link slideup" href="#3">Contacts</a>
+    <a class=" link slideup" href="#3">Contacts</a>
     <br>
     <hr class="hrright hrrightanim">
   </div>
-  <div class="leftdiv" id="interiordesign ">
-    <h1 class="interior slideup" id="firsttitle">INTERIOR DESIGN</h1>
-    <h1 class="interior slideup" id="secondtitle">CLASSIC AND SEMI-CLASSIC</h1>
-    <hr class="hrleft hrleftanim">
-    <h4 class="link slideup" id="Facebook ">Facebook</h4>
-    <h4 class="link slideup" id="linkdin ">Linkdin</h4>
+  <div class="primary leftdiv" id="interiordesign">
+    <h1 class="primary interior slideup" id="firsttitle">INTERIOR DESIGN</h1>
+    <h1 class="primary interior slideup" id="secondtitle">CLASSIC AND SEMI-CLASSIC</h1>
+    <hr class="primary hrleft hrleftanim">
+    <h4 class="primary link slideup" id="Facebook">Facebook</h4>
+    <h4 class="primary link slideup" id="linkdin">Linkdin</h4>
   </div>
-  <div id="theDiv ">
+  <div id="theDiv " class="primary column">
     <img class="special imganime1" src="background.PNG" alt="">
     <img Class="img1" src="img1.jpg" alt="">
   </div>
-  <div class="">
+  <div class="column">
     <img class="special2 imganime2" src="background.PNG" alt="">
-    <img src="img2.jpg" class="img2" alt="">
+    <img src="img2.jpg" class=" img2" alt="">
   </div>
-  <div class=" ">
+  <div class="column">
     <img class="special3 imganime3" src="background.PNG" alt="">
-    <img src="img3.jpg" id="img3" class="img3" alt="">
+    <img src="img3.jpg" id="img3" class=" img3" alt="">
   </div>
-  <div class="lastthing opacityanim">
+  <div class="secondary lastthing opacityanim">
     <h5 id="bigshit">CLASSIC</h5>
   </div>
-  <div id="text1"class="leftdiv">
+  <div id="text1"class="leftdiv primary">
     <h1 class="classarch slideup" id="1">CLASSARCH</h1>
     <h1 class="classarch slideup">INTERIOR DESIGN</h1>
     <p class="p1 slideup">CLASSARCH is a Los Angeles based studio practice focused</p>
@@ -69,19 +72,19 @@
     <p class="p1 slideup">this throught collaboration with all members of the</p>
     <p class="p1 slideup">project team including consultants, contractors</p>
     <p class="p1 slideup">trades and artisans.</p>
-    <div class="leftdiv">
+    <div class="leftdiv primary">
       <p class="p2 slideup">ABOUT</p>
     </div>
   </div>
-  <div id="slider" class="">
+  <div id="slider" class="primary">
     <div class="wrap">
       <div class="p3">
         <p class="slideup">TEAM</p>
       </div>
-      <div class="arrow1">
+      <div class="arrow1 primary">
         <img id="arrow-left" class="hrleftanim .arrow1"src="arrow_left.svg" alt="">
       </div>
-      <div class="slider">
+      <div class="slider primary">
         <!-- Slideshow 1 -->
         <div class="slide slide1">
           <div class="slide-content1">
@@ -125,21 +128,22 @@
           </div>
         </div>
       </div>
-      <div class="lastthing opacityanim">
+      <div class="lastthing opacityanim secondary">
         <h5 id="bigshit2">PHILOSOPHY</h5>
       </div>
-      <div class="arrow">
+      <div class="arrow primary">
         <img id="arrow-right" class="hrrightanim" src="arrow_right.svg" alt="">
       </div>
       <hr id="righthr" class="hrrightanim hrright">
     </div>
   </div>
-  <div id="slider2"class="">
+  <div class="p4 primary">
+    <p class="slideup">PROJECTS</p>
+  </div>
+  <div id="slider2"class="secondary">
        <h1 class="">nigga</h1>
        <div class="wrap2">
-         <div class="p4">
-           <p class="slideup">PROJECTS</p>
-         </div>
+
          <div id="arrow-left2"  class="arrow2">
            <img  class="hrleftanim" src="arrow_left.svg" alt="">
          </div>
@@ -171,29 +175,17 @@
                </div>
                <div class="descproject">
                  <h6 class="sub1 slideup element">ARCHITECT</h6>
-                             <p class="namefirst slideup element">BARBARA KNOWLES</p>
-                             <br>
-                             <br>
-                             <br>
-                             <br>
+                <p class="namefirst slideup element">BARBARA KNOWLES</p>
+
                  <h6 class="sub1 slideup element">DESIGNER</h6>
                  <p class="namefirst slideup element">STEVEN MCDOLLAR</p>
-                 <br>
-                 <br>
-                 <br>
-                 <br>
+
                  <h6 class="sub1 slideup element">CATEGORY</h6>
                  <p class="namefirst slideup element">RENOVATION</p>
-                 <br>
-                 <br>
-                 <br>
-                 <br>
+
                  <h6 class="sub1 slideup element">DATE</h6>
                  <p class="namefirst slideup element">NOVEMBER 20, 2018</p>
-                 <br>
-                 <br>
-                 <br>
-                 <br>
+
                  <h6 class="sub1 slideup element">TAGS</h6>
                  <p class="namefirst slideup element">SEMI-CLASSIC BLOOMS HOUSE</p>
                </div>
@@ -205,10 +197,10 @@
              </div>
            </div>
          </div>
-           <div id="arrow-right2" class="arrow3">
+           <div id="arrow-right2" class="arrow3 primary">
            <img src="arrow_right.svg" class="hrrightanim" alt="">
          </div>
-         <div class="projectsnav">
+         <div class="projectsnav secondary">
            <h4 class="link slideup">Bloom's House</h4>
            <h4 class="link slideup">Stevensos Gallery</h4>
            <h4 class="link slideup">Clayton House</h4>
@@ -217,7 +209,7 @@
        </div>
       </div>
 
-<div class="leftdiv2">
+<div class="leftdiv2 primary">
   <h1 id="3"class="interior slideup">TALK TO US</h1>
   <h1 class="interior slideup">ABOUT YOUR PROJECT</h1>
   <div class="contactelements1">
@@ -235,47 +227,47 @@
 </div>
 </div>
 
-  <p class="p5 slideup">NAME:</p>
+  <p class="p5 slideup primary">NAME:</p>
+  <input class="primary inputstyle hrleftanim" type="text" name="" value="">
+
+  <p class="p5 slideup primary">EMAIL:</p>
+  <input class="primary inputstyle hrleftanim" type="email" name="" value="">
+
+  <p class="p5 slideup primary">SUBJECT:</p>
   <input class="inputstyle hrleftanim" type="text" name="" value="">
 
-  <p class="p5 slideup">EMAIL:</p>
-  <input class="inputstyle hrleftanim" type="email" name="" value="">
-
-  <p class="p5 slideup">SUBJECT:</p>
+  <p class="p5 slideup primary">MESSAGE:</p>
   <input class="inputstyle hrleftanim" type="text" name="" value="">
 
-  <p class="p5 slideup">MESSAGE:</p>
-  <input class="inputstyle hrleftanim" type="text" name="" value="">
-
-<img class="specialcontact imganime2" src="background.PNG" alt="">
-<img class="contatimg"src="pic-contact.jpg" alt="">
-<p class="p6 slideup">SEND</p>
-<div class="p7">
+<img class="specialcontact imganime2 secondary" src="background.PNG" alt="">
+<img class="contatimg secondary"src="pic-contact.jpg" alt="">
+<p class="p6 slideup primary">SEND</p>
+<div class="p7 primary">
   <p class="slideup">CONTACTS</p>
 </div>
-  <h5 class="lastthing3 opacityanim" id="bigshit3">CONTACT</h5>
-  <footer>
+  <h5 class="lastthing3 opacityanim secondary" id="bigshit3">CONTACT</h5>
+  <footer class="">
     <div class="navfooter">
-      <a class="link slideup" href="#1">About</a>
+      <a class="link slideup main-content" href="#1">About</a>
       <br>
-      <a class="link slideup" href="#2">Projects</a>
+      <a class="link slideup main-content" href="#2">Projects</a>
       <br>
-      <a class="link slideup" href="#3">Contacts</a>
+      <a class="link slideup main-content" href="#3">Contacts</a>
     </div>
     <div class="linksnav">
-      <h4 class="link slideup"  >Facebook</h4>
-      <h4 class="link slideup" >Linkdin</h4>
+      <h4 class="link slideup main-content"  >Facebook</h4>
+      <h4 class="link slideup main-content" >Linkdin</h4>
     </div>
     <div class="ADRESS">
-      <p class="namefirst slideup element">4935 RANNON STREET</p>
+      <p class="namefirst slideup main-content">4935 RANNON STREET</p>
 
-    <p class="namefirst slideup element">LOS ANGELES</p>
+    <p class="namefirst slideup main-content">LOS ANGELES</p>
 
-    <p class="namefirst slideup element">CA 90026</p>
+    <p class="namefirst slideup main-content">CA 90026</p>
     </div>
     <div class="titlefooter">
-      <h2 class="companyname slideup">ClassArch.</h2>
-      <h3 class="subtitlename slideup">INTERIOR</h3>
+      <h2 class="companyname slideup main-content">ClassArch.</h2>
+      <h3 class="subtitlename slideup main-content">INTERIOR</h3>
     </div>
   </footer>
 <script src="scroll.js" charset="utf-8"></script>
